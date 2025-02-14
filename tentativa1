@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Acadêmico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: #000;
+            color: #004080;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .access-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .access-column {
+            width: 48%;
+        }
+
+        .access-column h2 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .admin-access input[type="text"], 
+        .admin-access input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .admin-access .forgot-password {
+            font-size: 12px;
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .admin-access button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .student-access button {
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .extra-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .extra-info p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .extra-info a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #17a2b8;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .govbr {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .govbr img {
+            width: 120px;
+        }
+
+        .govbr p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sistema Acadêmico</h1>
+    </div>
+    <div class="container">
+        <div class="access-section">
+            <div class="access-column admin-access">
+                <h2>Acesso Administrativo</h2>
+                <form>
+                    <input type="text" placeholder="Login (nome.sobrenome)" required>
+                    <input type="password" placeholder="Senha" required>
+                    <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                    <button type="submit">Entrar</button>
+                </form>
+                <div class="govbr">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_gov.br.svg/512px-Logo_gov.br.svg.png" alt="Gov.br">
+                    <p>Entre com Gov.br</p>
+                </div>
+            </div>
+            <div class="access-column student-access">
+                <h2>Acesso Estudante / Responsável</h2>
+                <button>Área do Estudante</button>
+                <div class="extra-info">
+                    <p>Acompanhe o desenvolvimento do Sistema Acadêmico</p>
+                    <a href="#">Planilha com Requisitos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
